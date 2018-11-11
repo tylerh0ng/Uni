@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6fz-x5-h7a">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Additional Pictures-->
+        <scene sceneID="Uyh-wq-IdY">
+            <objects>
+                <viewController id="6fz-x5-h7a" customClass="AdditionalPictures" customModule="wemic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="udV-lX-TK6" customClass="GradientView" customModule="wemic" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="additionalpics3x" translatesAutoresizingMaskIntoConstraints="NO" id="1Cg-Ru-yQs" userLabel="Picture1">
+                                <rect key="frame" x="20" y="216" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xQ9-QO-QLw" appends="YES" id="Pl0-2W-YBR"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="additionalpics3x" translatesAutoresizingMaskIntoConstraints="NO" id="o0j-gS-eab" userLabel="Picture2">
+                                <rect key="frame" x="219" y="216" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vis-rq-h5h" appends="YES" id="g1L-hO-a58"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="additionalpics3x" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-HF-uLt" userLabel="Picture3">
+                                <rect key="frame" x="20" y="414" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="NDl-mz-58t" appends="YES" id="8SF-ci-2ea"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="additionalpics3x" translatesAutoresizingMaskIntoConstraints="NO" id="Bew-b7-9e3" userLabel="Picture4">
+                                <rect key="frame" x="219" y="414" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wk7-Wm-B2n" appends="YES" id="8lb-JY-rIU"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8h-Tk-QuP">
+                                <rect key="frame" x="309" y="648" width="43" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ncN-KQ-a7r" kind="show" id="Wao-oS-ESK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pineapple" translatesAutoresizingMaskIntoConstraints="NO" id="nv2-6A-UXo">
+                                <rect key="frame" x="111" y="20" width="192" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Add 4 more pictures." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D7g-rh-ET8">
+                                <rect key="frame" x="62" y="116" width="290" height="54.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="7Tj-Wn-KGI"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="1" green="0.73333333329999995" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" red="1" green="0.47450980390000003" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="pic1" destination="1Cg-Ru-yQs" id="3wA-tR-ocL"/>
+                        <outlet property="pic2" destination="o0j-gS-eab" id="xR6-vv-vtZ"/>
+                        <outlet property="pic3" destination="mCe-HF-uLt" id="Bu2-P7-j3q"/>
+                        <outlet property="pic4" destination="Bew-b7-9e3" id="5ca-KJ-zgx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKt-2i-t1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xQ9-QO-QLw" userLabel="Pic1">
+                    <connections>
+                        <action selector="pic1Pressed:" destination="6fz-x5-h7a" id="oki-al-BOd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vis-rq-h5h" userLabel="Pic2">
+                    <connections>
+                        <action selector="pic2Pressed:" destination="6fz-x5-h7a" id="MK6-Zq-Mac"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NDl-mz-58t" userLabel="Pic3">
+                    <connections>
+                        <action selector="pic3Pressed:" destination="6fz-x5-h7a" id="5p0-E6-nzt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="wk7-Wm-B2n" userLabel="Pic4">
+                    <connections>
+                        <action selector="pic4Pressed:" destination="6fz-x5-h7a" id="8vf-i9-d2o"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="163.26836581709148"/>
+        </scene>
+        <!--Tagline-->
+        <scene sceneID="xe4-qv-n3T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tagline" id="ncN-KQ-a7r" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T0-E0-JzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="237"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pineapple" width="549" height="789"/>
+        <image name="additionalpics3x" width="525" height="525"/>
+    </resources>
+</document>

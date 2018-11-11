@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220922BFA258B9B45E02B0A3 /* Pods_wemicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5073A096170CFCB35D2061 /* Pods_wemicTests.framework */; };
+		72C22D226C8E395704A474BB /* Pods_wemic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98C8C67E1B099C6DD0550C2 /* Pods_wemic.framework */; };
+		CC3E1AB5212B5A030047F922 /* ProfilePicture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3E1AB4212B5A030047F922 /* ProfilePicture.storyboard */; };
+		CC3E1AB7212B5A0D0047F922 /* ProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E1AB6212B5A0D0047F922 /* ProfilePicture.swift */; };
+		CC3E1ABA212B69BD0047F922 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E1AB9212B69BD0047F922 /* GradientView.swift */; };
+		CC489FA52118E0D100E55B9B /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC489FA42118E0D000E55B9B /* Raleway-Regular.ttf */; };
+		CC489FA72118E1D900E55B9B /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC489FA62118E1D900E55B9B /* FredokaOne-Regular.ttf */; };
+		CC4C430D2177CEFE00935AE7 /* Tagline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4C430C2177CEFE00935AE7 /* Tagline.swift */; };
+		CC4C430F2177CF4C00935AE7 /* Tagline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4C430E2177CF4C00935AE7 /* Tagline.storyboard */; };
+		CC674F14214DE33600202A35 /* AdditionalPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC674F13214DE33600202A35 /* AdditionalPictures.swift */; };
+		CC674F16214DE34200202A35 /* AdditionalPictures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC674F15214DE34200202A35 /* AdditionalPictures.storyboard */; };
+		CC674F19214E006A00202A35 /* HomeMajor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC674F18214E006A00202A35 /* HomeMajor.swift */; };
+		CC674F1B214E007800202A35 /* HomeMajor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC674F1A214E007800202A35 /* HomeMajor.storyboard */; };
+		CC72B331211B9FF800ED8E90 /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC72B330211B9FF800ED8E90 /* CreateAccount.storyboard */; };
+		CC72B333211BA00700ED8E90 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC72B332211BA00700ED8E90 /* CreateAccount.swift */; };
+		CC731248216832CC0089DB0A /* MatchStream.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC731247216832CC0089DB0A /* MatchStream.storyboard */; };
+		CC73124A216833350089DB0A /* MatchStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC731249216833350089DB0A /* MatchStream.swift */; };
+		CC84896521276FDD00FBF33D /* ClassYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC84896421276FDD00FBF33D /* ClassYear.swift */; };
+		CC84896721276FE600FBF33D /* ClassYear.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC84896621276FE600FBF33D /* ClassYear.storyboard */; };
+		CC84896D2128DB9C00FBF33D /* SexualOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC84896C2128DB9C00FBF33D /* SexualOrientation.storyboard */; };
+		CC84896F2128DBC400FBF33D /* SexualOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC84896E2128DBC400FBF33D /* SexualOrientation.swift */; };
+		CC9ADFC02124C94700D5018C /* NameCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9ADFBF2124C94700D5018C /* NameCreation.storyboard */; };
+		CC9ADFC22124C95000D5018C /* NameCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9ADFC12124C95000D5018C /* NameCreation.swift */; };
+		CCAC60DA21293AC400FD8B3A /* PreferredSex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAC60D921293AC400FD8B3A /* PreferredSex.swift */; };
+		CCAC60DC21293AD000FD8B3A /* PreferredSex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAC60DB21293AD000FD8B3A /* PreferredSex.storyboard */; };
+		CCBA766B216B430E00A3C318 /* MatchStreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBA766A216B430E00A3C318 /* MatchStreamCell.swift */; };
+		CCEF4D742114C72800CCB222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEF4D732114C72800CCB222 /* AppDelegate.swift */; };
+		CCEF4D762114C72800CCB222 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEF4D752114C72800CCB222 /* LoginScreen.swift */; };
+		CCEF4D792114C72800CCB222 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEF4D772114C72800CCB222 /* LoginScreen.storyboard */; };
+		CCEF4D7B2114C72A00CCB222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEF4D7A2114C72A00CCB222 /* Assets.xcassets */; };
+		CCEF4D7E2114C72A00CCB222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEF4D7C2114C72A00CCB222 /* LaunchScreen.storyboard */; };
+		CCEF4D892114C72A00CCB222 /* wemicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEF4D882114C72A00CCB222 /* wemicTests.swift */; };
+		CCEF4D942114D39D00CCB222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCEF4D932114D39D00CCB222 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCEF4D852114C72A00CCB222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCEF4D682114C72800CCB222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCEF4D6F2114C72800CCB222;
+			remoteInfo = wemic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		331006151E7C93E7A30CD2F7 /* Pods-wemicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wemicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wemicTests/Pods-wemicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D5073A096170CFCB35D2061 /* Pods_wemicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wemicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9437F6951C000C0FDF7923 /* Pods-wemic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wemic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wemic/Pods-wemic.debug.xcconfig"; sourceTree = "<group>"; };
+		87A58D18748C4416DFDBA850 /* Pods-wemicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wemicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wemicTests/Pods-wemicTests.release.xcconfig"; sourceTree = "<group>"; };
+		A966444C802B2C9E1FCF3329 /* Pods-wemic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wemic.release.xcconfig"; path = "Pods/Target Support Files/Pods-wemic/Pods-wemic.release.xcconfig"; sourceTree = "<group>"; };
+		B98C8C67E1B099C6DD0550C2 /* Pods_wemic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wemic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3E1AB4212B5A030047F922 /* ProfilePicture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilePicture.storyboard; sourceTree = "<group>"; };
+		CC3E1AB6212B5A0D0047F922 /* ProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicture.swift; sourceTree = "<group>"; };
+		CC3E1AB9212B69BD0047F922 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CC489FA42118E0D000E55B9B /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		CC489FA62118E1D900E55B9B /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
+		CC4C430C2177CEFE00935AE7 /* Tagline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tagline.swift; sourceTree = "<group>"; };
+		CC4C430E2177CF4C00935AE7 /* Tagline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tagline.storyboard; sourceTree = "<group>"; };
+		CC674F13214DE33600202A35 /* AdditionalPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalPictures.swift; sourceTree = "<group>"; };
+		CC674F15214DE34200202A35 /* AdditionalPictures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdditionalPictures.storyboard; sourceTree = "<group>"; };
+		CC674F18214E006A00202A35 /* HomeMajor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMajor.swift; sourceTree = "<group>"; };
+		CC674F1A214E007800202A35 /* HomeMajor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMajor.storyboard; sourceTree = "<group>"; };
+		CC72B330211B9FF800ED8E90 /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+		CC72B332211BA00700ED8E90 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		CC731247216832CC0089DB0A /* MatchStream.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchStream.storyboard; sourceTree = "<group>"; };
+		CC731249216833350089DB0A /* MatchStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStream.swift; sourceTree = "<group>"; };
+		CC84896421276FDD00FBF33D /* ClassYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassYear.swift; sourceTree = "<group>"; };
+		CC84896621276FE600FBF33D /* ClassYear.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClassYear.storyboard; sourceTree = "<group>"; };
+		CC84896C2128DB9C00FBF33D /* SexualOrientation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SexualOrientation.storyboard; sourceTree = "<group>"; };
+		CC84896E2128DBC400FBF33D /* SexualOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexualOrientation.swift; sourceTree = "<group>"; };
+		CC9ADFBF2124C94700D5018C /* NameCreation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NameCreation.storyboard; sourceTree = "<group>"; };
+		CC9ADFC12124C95000D5018C /* NameCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCreation.swift; sourceTree = "<group>"; };
+		CCAC60D921293AC400FD8B3A /* PreferredSex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredSex.swift; sourceTree = "<group>"; };
+		CCAC60DB21293AD000FD8B3A /* PreferredSex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PreferredSex.storyboard; sourceTree = "<group>"; };
+		CCBA766A216B430E00A3C318 /* MatchStreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStreamCell.swift; sourceTree = "<group>"; };
+		CCEF4D702114C72800CCB222 /* wemic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wemic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEF4D732114C72800CCB222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCEF4D752114C72800CCB222 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		CCEF4D782114C72800CCB222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginScreen.storyboard; sourceTree = "<group>"; };
+		CCEF4D7A2114C72A00CCB222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCEF4D7D2114C72A00CCB222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCEF4D7F2114C72A00CCB222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEF4D842114C72A00CCB222 /* wemicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wemicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEF4D882114C72A00CCB222 /* wemicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wemicTests.swift; sourceTree = "<group>"; };
+		CCEF4D8A2114C72A00CCB222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEF4D932114D39D00CCB222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCEF4D6D2114C72800CCB222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C22D226C8E395704A474BB /* Pods_wemic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEF4D812114C72A00CCB222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220922BFA258B9B45E02B0A3 /* Pods_wemicTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77FBFDEAA1C4375C0CB134A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B98C8C67E1B099C6DD0550C2 /* Pods_wemic.framework */,
+				3D5073A096170CFCB35D2061 /* Pods_wemicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91A3A8A9D5F79934A03196DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C9437F6951C000C0FDF7923 /* Pods-wemic.debug.xcconfig */,
+				A966444C802B2C9E1FCF3329 /* Pods-wemic.release.xcconfig */,
+				331006151E7C93E7A30CD2F7 /* Pods-wemicTests.debug.xcconfig */,
+				87A58D18748C4416DFDBA850 /* Pods-wemicTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC3E1AB8212B5A150047F922 /* ProfilePicture */ = {
+			isa = PBXGroup;
+			children = (
+				CC3E1AB6212B5A0D0047F922 /* ProfilePicture.swift */,
+				CC3E1AB4212B5A030047F922 /* ProfilePicture.storyboard */,
+			);
+			path = ProfilePicture;
+			sourceTree = "<group>";
+		};
+		CC489FA32118E0B700E55B9B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC489FA42118E0D000E55B9B /* Raleway-Regular.ttf */,
+				CC489FA62118E1D900E55B9B /* FredokaOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CC4C43102177CF7000935AE7 /* Tagline */ = {
+			isa = PBXGroup;
+			children = (
+				CC4C430C2177CEFE00935AE7 /* Tagline.swift */,
+				CC4C430E2177CF4C00935AE7 /* Tagline.storyboard */,
+			);
+			path = Tagline;
+			sourceTree = "<group>";
+		};
+		CC674F17214DE35000202A35 /* AdditionalPictures */ = {
+			isa = PBXGroup;
+			children = (
+				CC674F13214DE33600202A35 /* AdditionalPictures.swift */,
+				CC674F15214DE34200202A35 /* AdditionalPictures.storyboard */,
+			);
+			path = AdditionalPictures;
+			sourceTree = "<group>";
+		};
+		CC674F1C214E007E00202A35 /* HomeMajor */ = {
+			isa = PBXGroup;
+			children = (
+				CC674F18214E006A00202A35 /* HomeMajor.swift */,
+				CC674F1A214E007800202A35 /* HomeMajor.storyboard */,
+			);
+			path = HomeMajor;
+			sourceTree = "<group>";
+		};
+		CC84896821276FF800FBF33D /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CCEF4D752114C72800CCB222 /* LoginScreen.swift */,
+				CCEF4D772114C72800CCB222 /* LoginScreen.storyboard */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		CC8489692127700B00FBF33D /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CC72B332211BA00700ED8E90 /* CreateAccount.swift */,
+				CC72B330211B9FF800ED8E90 /* CreateAccount.storyboard */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		CC84896A2127701F00FBF33D /* NameCreation */ = {
+			isa = PBXGroup;
+			children = (
+				CC9ADFC12124C95000D5018C /* NameCreation.swift */,
+				CC9ADFBF2124C94700D5018C /* NameCreation.storyboard */,
+			);
+			path = NameCreation;
+			sourceTree = "<group>";
+		};
+		CC84896B2127711300FBF33D /* ClassYear */ = {
+			isa = PBXGroup;
+			children = (
+				CC84896421276FDD00FBF33D /* ClassYear.swift */,
+				CC84896621276FE600FBF33D /* ClassYear.storyboard */,
+			);
+			path = ClassYear;
+			sourceTree = "<group>";
+		};
+		CC8489702128DBCE00FBF33D /* SexualOrientation */ = {
+			isa = PBXGroup;
+			children = (
+				CC84896E2128DBC400FBF33D /* SexualOrientation.swift */,
+				CC84896C2128DB9C00FBF33D /* SexualOrientation.storyboard */,
+			);
+			path = SexualOrientation;
+			sourceTree = "<group>";
+		};
+		CCAC60DD21293AD900FD8B3A /* PreferredSex */ = {
+			isa = PBXGroup;
+			children = (
+				CCAC60D921293AC400FD8B3A /* PreferredSex.swift */,
+				CCAC60DB21293AD000FD8B3A /* PreferredSex.storyboard */,
+			);
+			path = PreferredSex;
+			sourceTree = "<group>";
+		};
+		CCEF4D672114C72800CCB222 = {
+			isa = PBXGroup;
+			children = (
+				CCEF4D722114C72800CCB222 /* wemic */,
+				CCEF4D872114C72A00CCB222 /* wemicTests */,
+				CCEF4D712114C72800CCB222 /* Products */,
+				91A3A8A9D5F79934A03196DC /* Pods */,
+				77FBFDEAA1C4375C0CB134A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCEF4D712114C72800CCB222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCEF4D702114C72800CCB222 /* wemic.app */,
+				CCEF4D842114C72A00CCB222 /* wemicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCEF4D722114C72800CCB222 /* wemic */ = {
+			isa = PBXGroup;
+			children = (
+				CCEF4D732114C72800CCB222 /* AppDelegate.swift */,
+				CCEF4D7C2114C72A00CCB222 /* LaunchScreen.storyboard */,
+				CC3E1AB9212B69BD0047F922 /* GradientView.swift */,
+				CC84896821276FF800FBF33D /* LoginScreen */,
+				CC8489692127700B00FBF33D /* CreateAccount */,
+				CC84896A2127701F00FBF33D /* NameCreation */,
+				CC84896B2127711300FBF33D /* ClassYear */,
+				CC8489702128DBCE00FBF33D /* SexualOrientation */,
+				CCAC60DD21293AD900FD8B3A /* PreferredSex */,
+				CC3E1AB8212B5A150047F922 /* ProfilePicture */,
+				CC674F17214DE35000202A35 /* AdditionalPictures */,
+				CC4C43102177CF7000935AE7 /* Tagline */,
+				CC674F1C214E007E00202A35 /* HomeMajor */,
+				CC731249216833350089DB0A /* MatchStream.swift */,
+				CC731247216832CC0089DB0A /* MatchStream.storyboard */,
+				CCBA766A216B430E00A3C318 /* MatchStreamCell.swift */,
+				CCEF4D7F2114C72A00CCB222 /* Info.plist */,
+				CCEF4D932114D39D00CCB222 /* GoogleService-Info.plist */,
+				CCEF4D7A2114C72A00CCB222 /* Assets.xcassets */,
+				CC489FA32118E0B700E55B9B /* Fonts */,
+			);
+			path = wemic;
+			sourceTree = "<group>";
+		};
+		CCEF4D872114C72A00CCB222 /* wemicTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCEF4D882114C72A00CCB222 /* wemicTests.swift */,
+				CCEF4D8A2114C72A00CCB222 /* Info.plist */,
+			);
+			path = wemicTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCEF4D6F2114C72800CCB222 /* wemic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEF4D8D2114C72A00CCB222 /* Build configuration list for PBXNativeTarget "wemic" */;
+			buildPhases = (
+				E6F538DCC7C6D21B267AC3A5 /* [CP] Check Pods Manifest.lock */,
+				CCEF4D6C2114C72800CCB222 /* Sources */,
+				CCEF4D6D2114C72800CCB222 /* Frameworks */,
+				CCEF4D6E2114C72800CCB222 /* Resources */,
+				3883CE3355EDE0B81FA57278 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wemic;
+			productName = wemic;
+			productReference = CCEF4D702114C72800CCB222 /* wemic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCEF4D832114C72A00CCB222 /* wemicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEF4D902114C72A00CCB222 /* Build configuration list for PBXNativeTarget "wemicTests" */;
+			buildPhases = (
+				6570AC9AEB6123978E4E884F /* [CP] Check Pods Manifest.lock */,
+				CCEF4D802114C72A00CCB222 /* Sources */,
+				CCEF4D812114C72A00CCB222 /* Frameworks */,
+				CCEF4D822114C72A00CCB222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCEF4D862114C72A00CCB222 /* PBXTargetDependency */,
+			);
+			name = wemicTests;
+			productName = wemicTests;
+			productReference = CCEF4D842114C72A00CCB222 /* wemicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCEF4D682114C72800CCB222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = wemic;
+				TargetAttributes = {
+					CCEF4D6F2114C72800CCB222 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					CCEF4D832114C72A00CCB222 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = CCEF4D6F2114C72800CCB222;
+					};
+				};
+			};
+			buildConfigurationList = CCEF4D6B2114C72800CCB222 /* Build configuration list for PBXProject "wemic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCEF4D672114C72800CCB222;
+			productRefGroup = CCEF4D712114C72800CCB222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCEF4D6F2114C72800CCB222 /* wemic */,
+				CCEF4D832114C72A00CCB222 /* wemicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCEF4D6E2114C72800CCB222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEF4D7E2114C72A00CCB222 /* LaunchScreen.storyboard in Resources */,
+				CC489FA52118E0D100E55B9B /* Raleway-Regular.ttf in Resources */,
+				CCEF4D7B2114C72A00CCB222 /* Assets.xcassets in Resources */,
+				CC674F1B214E007800202A35 /* HomeMajor.storyboard in Resources */,
+				CC84896721276FE600FBF33D /* ClassYear.storyboard in Resources */,
+				CCEF4D942114D39D00CCB222 /* GoogleService-Info.plist in Resources */,
+				CC9ADFC02124C94700D5018C /* NameCreation.storyboard in Resources */,
+				CC674F16214DE34200202A35 /* AdditionalPictures.storyboard in Resources */,
+				CCEF4D792114C72800CCB222 /* LoginScreen.storyboard in Resources */,
+				CC731248216832CC0089DB0A /* MatchStream.storyboard in Resources */,
+				CC84896D2128DB9C00FBF33D /* SexualOrientation.storyboard in Resources */,
+				CC72B331211B9FF800ED8E90 /* CreateAccount.storyboard in Resources */,
+				CC3E1AB5212B5A030047F922 /* ProfilePicture.storyboard in Resources */,
+				CC4C430F2177CF4C00935AE7 /* Tagline.storyboard in Resources */,
+				CCAC60DC21293AD000FD8B3A /* PreferredSex.storyboard in Resources */,
+				CC489FA72118E1D900E55B9B /* FredokaOne-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEF4D822114C72A00CCB222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3883CE3355EDE0B81FA57278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wemic/Pods-wemic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AIFlatSwitch/AIFlatSwitch.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AIFlatSwitch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wemic/Pods-wemic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6570AC9AEB6123978E4E884F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wemicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F538DCC7C6D21B267AC3A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wemic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCEF4D6C2114C72800CCB222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAC60DA21293AC400FD8B3A /* PreferredSex.swift in Sources */,
+				CC84896F2128DBC400FBF33D /* SexualOrientation.swift in Sources */,
+				CC84896521276FDD00FBF33D /* ClassYear.swift in Sources */,
+				CC674F14214DE33600202A35 /* AdditionalPictures.swift in Sources */,
+				CCEF4D762114C72800CCB222 /* LoginScreen.swift in Sources */,
+				CC73124A216833350089DB0A /* MatchStream.swift in Sources */,
+				CC3E1AB7212B5A0D0047F922 /* ProfilePicture.swift in Sources */,
+				CCBA766B216B430E00A3C318 /* MatchStreamCell.swift in Sources */,
+				CC72B333211BA00700ED8E90 /* CreateAccount.swift in Sources */,
+				CCEF4D742114C72800CCB222 /* AppDelegate.swift in Sources */,
+				CC9ADFC22124C95000D5018C /* NameCreation.swift in Sources */,
+				CC674F19214E006A00202A35 /* HomeMajor.swift in Sources */,
+				CC4C430D2177CEFE00935AE7 /* Tagline.swift in Sources */,
+				CC3E1ABA212B69BD0047F922 /* GradientView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEF4D802114C72A00CCB222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEF4D892114C72A00CCB222 /* wemicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCEF4D862114C72A00CCB222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCEF4D6F2114C72800CCB222 /* wemic */;
+			targetProxy = CCEF4D852114C72A00CCB222 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCEF4D772114C72800CCB222 /* LoginScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEF4D782114C72800CCB222 /* Base */,
+			);
+			name = LoginScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CCEF4D7C2114C72A00CCB222 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEF4D7D2114C72A00CCB222 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCEF4D8B2114C72A00CCB222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCEF4D8C2114C72A00CCB222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCEF4D8E2114C72A00CCB222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9437F6951C000C0FDF7923 /* Pods-wemic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wemic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TylerHong.wemic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CCEF4D8F2114C72A00CCB222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A966444C802B2C9E1FCF3329 /* Pods-wemic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wemic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TylerHong.wemic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CCEF4D912114C72A00CCB222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 331006151E7C93E7A30CD2F7 /* Pods-wemicTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wemicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TylerHong.wemicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wemic.app/wemic";
+			};
+			name = Debug;
+		};
+		CCEF4D922114C72A00CCB222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A58D18748C4416DFDBA850 /* Pods-wemicTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = wemicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TylerHong.wemicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wemic.app/wemic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCEF4D6B2114C72800CCB222 /* Build configuration list for PBXProject "wemic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEF4D8B2114C72A00CCB222 /* Debug */,
+				CCEF4D8C2114C72A00CCB222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCEF4D8D2114C72A00CCB222 /* Build configuration list for PBXNativeTarget "wemic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEF4D8E2114C72A00CCB222 /* Debug */,
+				CCEF4D8F2114C72A00CCB222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCEF4D902114C72A00CCB222 /* Build configuration list for PBXNativeTarget "wemicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEF4D912114C72A00CCB222 /* Debug */,
+				CCEF4D922114C72A00CCB222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCEF4D682114C72800CCB222 /* Project object */;
+}
