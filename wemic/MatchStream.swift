@@ -126,7 +126,7 @@ class MatchStream: UIViewController, UICollectionViewDelegate, UICollectionViewD
         let selectedUserID = matchStreamArray[indexPath.row]
         
         
-        Database.database().reference().child("Users").child(matchStreamArray[indexPath.row]).observeSingleEvent(of: .value) { (snapshot) in
+        Database.database().reference().child("Users").child(selectedUserID).observeSingleEvent(of: .value) { (snapshot) in
             if let personDict = snapshot.value as? [String:AnyObject] {  //obtain all information of user
                 //ex. AttractedTo: men  Gender: Male  Hometown:Austin, TX
                 let profileURLString = personDict["Profile Picture"] as! String
@@ -146,29 +146,7 @@ class MatchStream: UIViewController, UICollectionViewDelegate, UICollectionViewD
                 cell.ProfilePic.kf.setImage(with: profileURL)  //use the kingfisher cocoapod to set image from url
                 
                 
-                
-                
-     /*           let imageDict = personDict["Additional Pics"] as? [String:AnyObject]
-                var stringImageArray=[String]()
-                for snap in imageDict!.values{
-                    stringImageArray.append(snap as! String)
-                }
-                let selectedImageString=stringImageArray[0]
-                let selectedStringURL=URL(string: selectedImageString)
-                cell.backgroundImage.kf.setImage(with: selectedStringURL)
-                cell.backgroundImage.layer.cornerRadius=20
-                cell.backgroundImage.layer.maskedCorners=[.layerMinXMinYCorner , .layerMaxXMinYCorner]
-                cell.imageOne.kf.setImage(with: url)
-                cell.imageOne.layer.borderColor=UIColor.flatWatermelon.cgColor
-                cell.imageOne.clipsToBounds=true
-                cell.imageOne.contentMode = .scaleAspectFill
-                cell.viewOne.layer.cornerRadius=20
-                cell.viewOne.frame=CGRect(x: 37, y: 119, width: 301, height: 462)
-                cell.imageOne.layer.cornerRadius=cell.imageOne.frame.height/2
-                cell.imageOne.layer.borderWidth=2.0
-                cell.imageOne.clipsToBounds=true
-                let newItem=personDict["Additional Pics"] as? [String:AnyObject]
-      *///          additionalPics=newItem!.count
+    
                 
                 
             }

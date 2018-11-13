@@ -40,7 +40,7 @@ class Tagline: UIViewController {
     
     
     func setUpTextField() {
-        let textFieldFrame = CGRect(x: 106, y: 416, width: 309, height: 60)
+        let textFieldFrame = CGRect(x: 53, y: 416, width: 309, height: 60)
         taglineTextField.placeholder = "Tagline"
         taglineTextField.frame = textFieldFrame
         taglineTextField.title = "Tagline (ex. I can handle the business side)"

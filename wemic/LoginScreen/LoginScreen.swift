@@ -25,6 +25,8 @@ class LoginScreen: UIViewController {
     @IBOutlet weak var pineappleLogo: UIImageView!
     
     var didOnboarding = Bool()
+    let dispatchGroup = DispatchGroup()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +41,10 @@ class LoginScreen: UIViewController {
     
     /* This function tells us whether the user has done at least one onboarding screen. */
     func userDidOnboarding() {
+        dispatchGroup.enter()
         Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).observeSingleEvent(of: .value) { (snapshot) in
-                self.didOnboarding = snapshot.exists()
-            
+            self.didOnboarding = snapshot.exists()
+            self.dispatchGroup.leave()
         }
     }
     
@@ -59,29 +62,31 @@ class LoginScreen: UIViewController {
         else {
             Auth.auth().signIn(withEmail: emailField.text!, password: passwordField.text!) { (Result, Error) in
                 self.userDidOnboarding()
-                if Error == nil {
-                    if Auth.auth().currentUser?.isEmailVerified != true { //if you're not verified
-                        let alert = UIAlertController(title: "Email Not Verified", message: "Please verify your email before logging in.", preferredStyle: .alert)
-                        let ok = UIAlertAction(title: "Ok", style: .default, handler: {action in
-                            try! Auth.auth().signOut()
-                        })
+                self.dispatchGroup.notify(queue: .main) {
+                    if Error == nil {
+                        if Auth.auth().currentUser?.isEmailVerified != true { //if you're not verified
+                            let alert = UIAlertController(title: "Email Not Verified", message: "Please verify your email before logging in.", preferredStyle: .alert)
+                            let ok = UIAlertAction(title: "Ok", style: .default, handler: {action in
+                                try! Auth.auth().signOut()
+                            })
+                            alert.addAction(ok)
+                            self.present(alert,animated:true,completion:nil)
+                        }
+                        else if self.didOnboarding {
+                            self.performSegue(withIdentifier: "LoginScreenToMatchStream", sender: nil)
+                        }
+                        else {
+                            self.performSegue(withIdentifier: "LoginScreenToNameCreation", sender: nil)
+                        }
+                    }
+                    else{
+                        let alert = UIAlertController(title: "Login Unsuccessful", message: "Please make sure your email and password are entered correctly.", preferredStyle: .alert)
+                        let ok = UIAlertAction(title: "Ok", style: .default) { (cancel) in
+                            print(cancel)
+                        }
                         alert.addAction(ok)
                         self.present(alert,animated:true,completion:nil)
                     }
-                    else if self.didOnboarding {
-                        self.performSegue(withIdentifier: "LoginScreenToMatchStream", sender: nil)
-                    }
-                    else {
-                        self.performSegue(withIdentifier: "LoginScreenToNameCreation", sender: nil)
-                    }
-                }
-                else{
-                    let alert = UIAlertController(title: "Login Unsuccessful", message: "Please make sure your email and password are entered correctly.", preferredStyle: .alert)
-                    let ok = UIAlertAction(title: "Ok", style: .default) { (cancel) in
-                        print(cancel)
-                    }
-                    alert.addAction(ok)
-                    self.present(alert,animated:true,completion:nil)
                 }
             }
         }
