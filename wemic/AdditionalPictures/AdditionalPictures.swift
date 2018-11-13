@@ -75,6 +75,7 @@ class AdditionalPictures: UIViewController, UIImagePickerControllerDelegate, UIN
         dismiss(animated: true, completion: nil)
     }
     
+
     @IBAction func nextButtonPressed(_ sender: Any) {
         uploadPic1()
         uploadPic2()

@@ -23,8 +23,8 @@ class PreferredSex: UIViewController {
         
         /* The following lines of code are used to obtain the gender of the current user. */
         databaseRef.child("Users").child(userID!).observeSingleEvent(of: .value) { (snapshot) in
-            let value = snapshot.value as! [String:String]
-            let userGender = value["Gender"]!
+            let value = snapshot.value as! [String:AnyObject]
+            let userGender = value["Gender"] as! String
             
             
             /* The following lines of code are used to record what the user is attracted to. */
