@@ -85,7 +85,7 @@ class CreateAccount: UIViewController {
                     } )
                     Auth.auth().currentUser!.sendEmailVerification(completion: { (Error) in
                         if Error == nil{
-                            let alert = UIAlertController(title: "Email Verification Sent", message: "Once you have verified your email, you will be able to login to Wemic.", preferredStyle: .alert)
+                            let alert = UIAlertController(title: "Email Verification Sent", message: "Once you have verified your email, you will be able to login to Uni.", preferredStyle: .alert)
                             let ok = UIAlertAction(title: "Ok", style: .default, handler: { action in                                self.navigationController?.popViewController(animated: true)
                             })
                             alert.addAction(ok)
