@@ -17,7 +17,7 @@ Inspired by Creativedash's Dribbble post [here](http://dribbble.com/shots/163159
 ## Requirements
 - iOS 8.0+
 - Xcode 8.0+ (Use pod version 0.0.4 for Xcode 7)
-- Swift 3.0+ (Use pod version 0.0.4 for Swift 2.3)
+- Swift 4.2+ (Use pod version 0.0.4 for Swift 2.3, Use pod version 1.0.3 for Swift 3)
 
 ## Installation
 
@@ -43,7 +43,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'AIFlatSwitch', '~> 1.0.1'
+pod 'AIFlatSwitch', '~> 1.0.5'
 ```
 
 Then, run the following command:
@@ -75,7 +75,7 @@ var flatSwitch = AIFlatSwitch(frame: CGRectMake(0, 0, 50, 50))
 > To change its selected state:
 
 ```swift
-flatSwitch.selected = true
+flatSwitch.isSelected = true
 ```
 - [x] IBInspectable
 
@@ -90,9 +90,21 @@ flatSwitch.setSelected(true, animated: true)
 ```swift
 @IBAction func handleSwitchValueChange(sender: AnyObject) {
 		if let flatSwitch = sender as? AIFlatSwitch {
-			println(flatSwitch.selected)
+			print(flatSwitch.isSelected)
 		}
 	}
+```
+
+> Animation observer callbacks:
+
+```swift
+flatSwitch.selectionAnimationDidStart = { isSelected in
+    print("New state: \(isSelected)")
+}
+
+flatSwitch.selectionAnimationDidStop = { isSelected in
+    print("State when animation stopped: \(isSelected)")
+}
 ```
 
 > Styling the switch:
@@ -104,6 +116,16 @@ flatSwitch.trailStrokeColor = UIColor.redColor()
 flatSwitch.animatesOnTouch = false
 ```
 - [x] IBInspectable
+
+## Contribution guidelines
+
+- Make your changes in your branch
+- Bump the pod version in AIFlatSwitch.podspec file (e.g. 1.0.1 to 1.0.2)
+- Make a pod install in Example project to update its dependency to new framework version you just created
+- Make sure the Example project compiles and works fine in the Simulator
+- Find podspec version references in README.md and update them (e.g. Cocoapods section)
+- Find references to your source code changes in README.md and update them (e.g. method names, changed features)
+- Create a pull request
 
 ## License
 
